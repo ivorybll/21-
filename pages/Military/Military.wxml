@@ -1,9 +1,0 @@
-<loading hidden="{{loadingHidden}}" class="upload">
-     正在加载
-</loading>
-<view class='box'>
-  <view class='Military'>
- <canvas class='poster'canvas-id='mycanvas'></canvas>
-  </view>
-  <button class='agree' open-type='share'>同意，并分享</button>
-</view>
