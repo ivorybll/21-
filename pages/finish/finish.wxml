@@ -1,0 +1,78 @@
+<swiper class='trainingSwiper' indicator-dots="{{false}}" autoplay="{{false}}" circular='{{false}}' vertical="{{true}}" duration="500" previous-margin='0' next-margin='0' current="{{num}}"  bindchange="listenSwiper" >
+    <swiper-item> 
+      <view class="gold">
+        <image src='../imgs/gold.png' class='gold1'></image>
+        <image src='../imgs/back2.png' class='back2'></image>
+        <view class='backsen'>
+          <view class="portrait">
+           <open-data type="userAvatarUrl"></open-data>
+        </view>        
+        <view class='loginName'>
+          <open-data type="userNickName"></open-data>
+        </view>
+        <text class='finishTit'>恭喜你完成训练!</text>
+        <view class='finsihContent'>
+          <text class='otext'>2018年7月9日</text>
+          <text class='fintext'>你签署了环球在线<text class='otext'>魔鬼训练营</text>军令状</text>
+          <text class='fintext'>从<text class='otext'>{{brr[0]}}月{{brr[1]}}日</text>到<text class='otext'>{{brr[2]}}月{{brr[3]}}日</text>的每一天</text>
+          <text class='fintext'>你都在实践自己的<text class='otext'>承诺</text></text>
+          <text class='fintext'>累计打卡<text class='otext'>{{brr[4]}}次</text>,总计<text class='otext'>{{brr[5]}}分</text></text> 
+          <text class='fintext'>超过了<text class='otext'>{{brr[6]}}%</text>的学员</text>      
+        </view>       
+      </view>
+      <view class='finbot'><image src='../imgs/up.png'></image></view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='king'>
+    <image src='../imgs/king.png' class='gold1'></image>
+        <image src='../imgs/back2.png' class='back2'></image>
+        <view class='backsen'>
+          <view class="portrait">
+           <open-data type="userAvatarUrl"></open-data>
+          </view>        
+          <view class='loginName'>
+            <open-data type="userNickName"></open-data>
+          </view>
+          <view class='finsihContent fintit'>
+            <text class='fintext'><text class='otext'>21天</text>的路途中<text class='otext'>环球在线</text>始终与你相伴</text>
+            <text class='fintext'>相信你的<text class='otext'>付出</text>一定会有<text  class='otext'>收获</text></text>
+            <text class='fintext'>祝你在<text class='otext'>雅思考试</text>里</text>
+            <text class='fintext'>取得<text class='otext'>理想的成绩!</text></text>      
+          </view>        
+    </view>
+      <view class='finbot up1'><image src='../imgs/up.png'></image></view>
+   </view>
+  </swiper-item>
+   <swiper-item>
+    <view class='count'>
+     <view class="portrait countT">
+       <open-data type="userAvatarUrl"></open-data>
+      </view>        
+      <view class='loginName'>
+       <open-data type="userNickName"></open-data>
+      </view>
+      <view class='countCon'>
+      <image src='../imgs/back3.png'></image>
+      <view class='countsen'>
+        <text class='finishTit'>恭喜你完成训练!</text>
+        <image src='../imgs/devilkin.png' class='devil'></image>
+        <text class='finTA'>魔鬼训练营第10期</text>
+        <text class='finTB'>成功打卡<text class='ofin'>{{brr[4]}}</text>次</text>
+         <view class='punch'>
+          <view class='clock' wx:for="{{datarr}}" wx:item="item" wx:index="index">
+           <text class='mon'>{{item.month}}月</text>
+           <view class='mdays'>             
+            <view wx:for="{{item.days}}" wx:for-item="items" wx:for-index="ind" wx:key="keys">              
+              <image src='../imgs/cut{{items}}.png'></image> 
+              <text>{{item.dan[ind]}}</text>           
+            </view>
+           </view>
+          </view>
+         </view>
+        <button class='shareA'>分享成就</button>
+      </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

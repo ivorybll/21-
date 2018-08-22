@@ -1,0 +1,47 @@
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="reading">
+  <image src='../../imgs/Operation.png' class='oper'></image>
+  <view class='readTitle'>
+  {{lists.question.questionTitle}}
+  </view>
+  <view class='readscrap'>
+  
+    <swiper class='trainingSwiper' indicator-dots="{{true}}" autoplay="{{false}}" circular='{{false}}' vertical="{{false}}"duration="500" previous-margin='0' next-margin='0' current="{{num}}"  bindchange="listenSwiper" >
+     <block wx:for="{{essay}}" wx:key="key" wx:item="item" wx:index="index">
+      <swiper-item> 
+        <view class='essay' wx:for="{{item}}" wx:for-item="items" wx:for-index="ind" >        
+           {{items}}
+        </view>
+      </swiper-item>
+    </block>
+    </swiper>
+  
+  </view>
+  <view class='readQ'>
+    <text>Question</text>
+    <view wx:for="{{ qsentence}}" wx:item="item" wx:index="index" class='qfsen'>
+      <view class='qtitle'>{{index+1}}.{{item}}</view>
+      <view class='{{readclass}}'>{{qfen==''?'请在笔记本上填写答案':qfen[0]}}</view>     
+    </view>
+    <view wx:for="{{qfill}}" wx:item="item" wx:index="index" class='qfill'>
+      <view class='scrap' hidden='{{hide}}'>{{qsentence.length+index+1}}.{{item}}</view>
+      <view class='rscrap' hidden='{{!hide}}'>
+       <template is="wxParse" data="{{wxParseData:filling.nodes}}"/>
+      </view>     
+    </view>
+  </view>
+</view>
+<view class='Meaningbottom' hidden='{{Punch}}'>
+  <text>完成全部练习，显示答案</text>
+  <button bindtap='sub'>提交</button>
+ </view>
+  <view class='Meaningbottom' hidden='{{!Punch}}'>
+  <text>分享至微信群"魔鬼训练营"</text>
+  <button open-type='share'>打卡分享</button>
+ </view>
+ <view class='mask' hidden='{{hidden}}'>
+  <image src='{{imgs}}'></image>
+  <button class='upload' bindtap='upload'>确认上传</button>
+  <button class='againload' bindtap='againload'>重拍</button>
+</view>

@@ -1,0 +1,208 @@
+/* pages/finish/finish.wxss */
+page view{
+  overflow: hidden;
+}
+page{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+.gold{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:#fff0c4;
+  position:absolute;
+}
+.gold1{
+  width: 100%;
+  height:30%;
+}
+.back2{
+  width: 100%;
+  height:70%;
+  display: block;
+}
+.portrait{
+  width: 100%;  
+}
+.backsen{
+  top: 487rpx;
+  padding: 0 20rpx;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+
+}
+.finsihContent{
+  width: 455rpx;
+  margin: 0 auto;
+  margin-top:12rpx;
+  text-align: center;
+
+}
+.portrait{
+  width: 87rpx;
+  height: 87rpx;
+  border-radius: 50%;
+  border:1rpx solid white;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.loginName{
+  font-size: 24rpx;
+  color:white;
+  text-align: center;
+  margin-top:20rpx; 
+}
+.finishTit{ 
+  width: 280rpx;
+  font-size: 38rpx;
+  line-height: 25rpx;
+  color: #000000;
+  text-align: center;
+  display: block;
+  border-bottom: 12rpx solid#FF8640;
+  margin: 0 auto;
+  margin-top:60rpx; 
+}
+.fintext{
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  line-height:50rpx;
+}
+.otext{
+  font-size: 28rpx;
+  color: #FF6004;
+  text-align: center;
+}
+.finbot{
+  width: 42rpx;
+  height: 23rpx;
+  position: absolute;
+  bottom:50rpx;
+  left: 50%;
+  transform: translate(-50%,0)
+}
+.finbot image{
+  width: 42rpx;
+  height: 23rpx;
+  display: block;
+}
+.king{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:#fff0c4;
+}
+.fintit{
+  margin-top: 146rpx;
+}
+.count{
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(rgba(255,78,2,1),rgba(255,118,6,1));
+}
+.countT{
+  margin-top: 44rpx;
+}
+.countCon{
+  width: 670rpx;
+  height: 964rpx;
+  border-radius:34rpx  34rpx   20rpx  34rpx ;  
+  margin: 0 auto;
+  margin-top: 27rpx;
+  position: relative;
+}
+.countCon image{
+  width: 100%;
+  height: 100%;
+}
+.countsen{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.devil{
+  width: 62rpx!important;
+  height: 94rpx!important;
+  display: block;
+  margin: 0 auto;
+  margin-top: 31rpx;
+}
+.finTA{
+  font-size: 32rpx;
+  color: #000000;
+  display: block;
+  text-align: center;
+}
+.finTB{
+  font-size:32rpx;
+  color:#FF6105;
+  display: block;
+  text-align: center;
+}
+.ofin{
+  font-size: 46rpx;
+}
+.shareA{
+  font-size: 32rpx;
+  color: white;
+  width: 360rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin: 0 auto;
+  background:linear-gradient(rgba(255,78,2,1),rgba(255,118,6,1));
+  position: absolute;
+  bottom: 70rpx;
+  left: 50%;
+  margin-left:-180rpx;
+}
+.clock{
+  width:90%;
+  margin: 0 auto;
+  margin-top:60rpx; 
+  overflow: hiddne;
+}
+.mdays{
+  width: 546rpx!important;
+  overflow: hidden;
+}
+.mon{
+  width: 52rpx;
+  font-size:32rpx;
+  line-height: 26rpx;
+  font-weight: bold;
+  border-bottom:10rpx solid #FFAE6D;
+  float: left;
+}
+.mdays view{ 
+  width: 48rpx;
+  height: 48rpx;
+  float: left;
+  margin:0 15rpx 30rpx 15rpx;
+  position: relative;  
+}
+.clock view image{
+  width:48rpx;
+  height: 48rpx;
+}
+.mdays view text{
+  width: 30rpx;
+  font-size: 24rpx;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top:50%;   
+  left:50%;
+  transform: translate(-50%,-50%)
+}

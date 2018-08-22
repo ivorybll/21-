@@ -1,0 +1,110 @@
+<view class="box">
+ <view class='training'>
+ <view class='{{headerclass}}'></view>
+ <view class='trainingcontent page-section page-section-spacing swiper'>
+   <swiper class='trainingSwiper' indicator-dots="{{false}}" autoplay="{{false}}" circular='{{false}}' vertical="{{false}}"duration="500" 
+    previous-margin='30px' next-margin='30px' current="{{num}}"  bindchange="listenSwiper" >
+   <block wx:for="{{lists}}" wx:key="key" wx:index="index" >
+    <swiper-item class="{{dataclass[index]}}">    
+      <view class='swiper-item {{item}}'>
+        <view class='order' wx:if="{{index==0}}">
+          <image src='../imgs/Militaryback.png' class='orderback'></image>
+          <view class='Militrays'>
+          <view class='MilitraysHead'>
+            <image src='../imgs/devilkin2.png'></image>
+            <text>21天魔鬼训练营</text>
+            <text>21 days of the devil training camp </text>
+          </view>
+          <view class='Militrayscontent'>
+            <view class='Militarytitle'>军令状</view>
+              <text class='start'>本人</text> <open-data type="userNickName" class="nickNames"></open-data><text>{{content}}</text>
+            </view>  
+
+             <view class='Militraysend'>
+              <view class='MilitL'>
+                <text>见证人：</text>
+                <image src='../imgs/huan.jpg'></image>
+              </view>
+              <view class='Militr'>
+                <view>承诺人：<open-data type="userNickName" class="MiliNames"></open-data> 
+              </view>
+              <text space="nbsp">日    期：{{armydays[0]}}/{{armydays[1]}}/{{armydays[2]}}</text>
+           </view>
+          </view>           
+          </view>                  
+        </view>
+        <!-- <view class='sta' wx:if="{{index==5}}">
+          <image src='{{item.stage.imgs}}'></image>
+          <view class='stageBack'>
+            <text>阶段承诺书</text>
+            <text>本人<open-data type="userNickName" class="nickNames"></open-data>已完成第{{item.state.num}}阶段学习计划,顺利进入到第{{item.state.num+1}}阶段,在此承诺,全力以赴完成接下来的训练营任务,并坚持按时打卡,立志为证。</text>
+            <view>承诺人:<open-data type="userNickName" class="nickNames"></open-data></view>
+             <view>日  期:{{item.state.days}}</view>
+          </view>
+          <view>{{item.state.todays}}</view>
+        </view> -->
+        <!-- <view class='Lack' wx:if="{{index==4}}">
+          <text class='title'>{{item.Lack.title}}</text>
+          <text class='notice'>{{item.Lack.notice}}</text>
+          <text class='conttext'>{{item.Lack.text}}</text>
+          <image src='{{item.Lack.contimg}}' class='contimg'></image>
+          <text class='bottext'>{{item.Lack.bottext}}</text>
+          <text class='days'>{{item.Lack.days}}</text>
+        </view> -->
+        <view class='stage' wx:if="{{index!==0&&index%7===0}}">
+         <image src='{{stage.imgs}}'></image>
+          <view class='stageback'>
+           <text class='stageTitle'>阶段承诺书</text>
+           <view class='stageContent'><text class='start'>本人</text>
+            <open-data type="userNickName" class="nickNames"></open-data><text>已完成第<text class='unline'> {{index/7}} </text>阶段学习计划，顺利进入第<text class='unline'> {{index/7+1}} </text>阶段，在此承诺，全力以赴完成接下来的训练营任务，并坚持按时打卡，立此为证</text> 
+           </view>
+           <view class='stageaysend'>             
+              <view class='stageay'>
+                <view>承诺人：<open-data type="userNickName" class="MiliNames"></open-data> 
+              </view>
+              <text space="nbsp">日    期：2018/07/08</text>
+           </view>
+          </view>
+          </view>
+        </view>
+        <view class='Daytask' wx:if="{{index%7!==0}}">
+          <view class='workday'>{{item.title}}</view>
+          <view wx:for="{{item.brr}}" wx:for-item="items" wx:index="ind" wx:key="keys" class='worktext'>
+              <image src='{{items.imgT===""?items.imgF:items.imgT}}'></image>
+              <text data-id='{{items.lists.q_id}}' data-sid='{{items.lists.id}}' data-nid='{{items.Punch}}' bindtap='paperLists'>{{items.lists.q_desc}}</text>
+              <text class='{{items.Punch!=="待打卡"?"opensenA":"opensenB"}}'>{{items.Punch}}</text>  
+          </view>           
+           <view class='lull' wx:if="{{lull==0&&index==lists.length-1}}">
+             <text class='lulltit'>{{item.notice}}</text>
+             <view class='lullcon'>
+               {{item.text}}
+             </view>
+             <image src='{{item.contimg}}' class='lullimgs'></image>
+             <view class='lullbot'>{{item.bottext}}</view>
+           </view>
+          <view class='daysen'>
+            <text class='months'>{{item.days[0]}}</text>
+            <text class="dayrs"> / {{item.days[1]}}</text>
+          </view>            
+        </view>         
+      </view>
+      
+    </swiper-item>
+   </block>
+
+   </swiper>
+ </view>
+  <view class='trainingHeader'>
+    <view class="portrait">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>        
+    <view class='loginName' wx:if="{{userhide}}">
+      <open-data type="userNickName"></open-data>
+    </view>
+     <view wx:if="{{!userhide}}" class='userbranch'>
+        <text class='stagen'>第{{stageS[1]}}阶段</text>
+        <text class='Total'>总计<text> {{stageS[0].score}} </text>分</text>
+      </view>    
+    </view>
+  </view>
+</view>

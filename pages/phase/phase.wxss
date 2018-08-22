@@ -1,0 +1,130 @@
+/* pages/phase/phase.wxss */
+page{
+ background:rgba(244,244,244,1); 
+}
+page view{
+  overflow: hidden;
+}
+.phase{
+  width: 590rpx;
+  height: 890rpx;
+  border-radius: 10rpx;
+  background:  #FFFFFF;
+  margin: 0 auto;
+  margin-top:40rpx; 
+  padding-top: 50rpx;
+}
+.phasetitle{
+  width:215rpx;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  
+
+}
+.phasetitle image{
+  width: 52rpx;
+  height: 74rpx;
+  float: left;
+  margin-right:20rpx;
+}
+.phasetitle view{
+  float: left;
+}
+.phasetitle view text{
+  font-size: 28rpx;
+  line-height: 36rpx;
+  display: block;
+  font-weight: bold;
+}
+.phaseHeader{
+  width: 100%;
+  margin-top:52rpx;
+}
+.phaseHeader text{
+  display: block;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  font-family:PingFangSC-Regular;
+  color:rgba(0,0,0,1);
+  
+}
+.phaseHeader text text{
+  font-size: 28rpx;
+  display: inline;
+  color: #FF6105;
+}
+.phaseContent{
+  width: 526rpx;
+  height: 580rpx;
+  margin: 0 auto;
+  margin-top: 55rpx;
+  position: relative;
+}
+.phaseContent image{
+  width: 526rpx;
+  height: 580rpx;
+  margin: 0 auto;
+
+}
+.phasesen{
+  position: absolute;
+  width: 526rpx;
+  height: 580rpx;
+  top: 0;
+  left:0;
+}
+.phasentitle{
+  width: 100%;
+  font-size:34rpx;
+  text-align: center;
+  display: block;
+  margin-top:36rpx; 
+}
+.phasetext{
+  width: 445rpx;
+  height: 580rpx;
+  margin: 0 auto;
+}
+.phasetext text{
+  font-size: 28rpx;
+  
+}
+.start{
+  margin-left: 60Wrpx;
+}
+.nickNames{
+  font-size: 28rpx;
+  text-decoration: underline;
+}
+.unline{
+   text-decoration: underline;
+}
+.stageaysend{
+  width: 600rpx;
+  display: block;
+  color:#000000;
+  
+}
+.stageay{
+  margin-top: 139rpx;
+  margin-left: 170rpx;
+  font-size: 28rpx;
+
+}
+.stageay view{
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+}
+button{
+  width: 360rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background:linear-gradient(0deg,rgba(255,118,6,1),rgba(255,78,2,1));
+  color: white;
+  font-size: 32rpx;
+  line-height:70rpx;
+  margin-top: 80rpx;
+
+}

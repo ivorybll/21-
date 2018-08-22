@@ -1,0 +1,8 @@
+.paperLists{
+  width: 100%;
+}
+.paperLists image{
+  width: 100%;
+  height: 80rpx;
+  display: block;
+}

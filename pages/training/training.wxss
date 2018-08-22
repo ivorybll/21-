@@ -1,0 +1,414 @@
+page{
+  width: 100%;
+  height: 100%;
+  background:#F4F4F4;
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.portrait{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border:1rpx solid white;
+
+}
+.training{
+  width: 100%;
+  height: 100%;
+
+}
+.trainingcontent{
+  width: 100%;
+  position:absolute;
+  top:200rpx;
+}
+
+.lulltit{
+  font-size:32rpx;
+  text-align: center;
+  color: #FF0505;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 37rpx;
+}
+.lullbot{
+  font-size: 24rpx;
+  color: #000000;
+  text-align: center;
+  margin-top: 85rpx;
+}
+.lullcon{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  color:#000000;
+  width: 410rpx;
+  text-indent: 40rpx;
+  margin: 0 auto;
+  display: block;
+}
+.lullimgs{
+  width: 326rpx;
+  height: 257rpx;
+  display: block;
+  margin:0 auto;
+  margin-top: 60rpx;
+
+}
+.trainingHeader{
+  position: absolute;
+  left: 50%;
+  top:32rpx;
+  transform:translate(-50%,0);
+  display: block;
+  width: 100%;
+}
+.trainingBarA{
+  width: 100%;
+  height: 260rpx;
+  background:rgba(255,102,51,1);
+}
+.trainingBarB{
+  width: 100%;
+  height: 260rpx;
+ background:rgba(191,191,191,1);
+}
+.loginName{
+  margin-top: 20rpx;
+  color:white;
+  font-size: 24rpx;
+  text-align: center;
+}
+swiper-item{
+  margin-top: 19rpx;
+  width:630rpx!important;
+
+}
+swiper{
+  width:100%;
+  height:1000rpx;
+}
+.swiper-itemP{
+  margin-top: 0!important;
+ width:630rpx!important;
+
+  }
+  .swiper-itemP .swiper-item{
+  width: 590rpx;
+  height: 940rpx;
+  border-radius: 10rpx;
+  background:rgba(255,255,255,1);
+  color:red;
+  font-size: 15rpx;
+  margin: 0 auto; 
+  }
+.swiper-item{
+  width: 590rpx;
+  height: 900rpx;
+  border-radius: 10rpx;
+  background:rgba(255,255,255,1);
+  color:red;
+  font-size: 15rpx;
+  margin: 0 auto;  
+  overflow: hidden;
+  position: relative;
+
+}
+.order{
+  width: 100%;
+  height: 100%;
+  display: block
+}
+.Lack{
+  width: 100%;
+}
+.title{
+  width:100%;
+  height: 34rpx;
+  font-size: 36rpx;
+  text-align: center;
+  font-family:PingFangSC-Regular;
+  color:rgba(0,0,0,1);
+  margin: 0 auto;
+  margin-top:87rpx;
+  display: block;
+}
+.notice{
+  width:100%;
+  height: 31rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color:#FF0505;
+  margin-top: 59rpx;
+  display: block;
+}
+.conttext{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  width: 429rpx;
+  height: 119rpx;
+  display: block;
+  color:rgba(0,0,0,1);
+  margin: 0 auto;
+  margin-top: 37rpx;
+}
+.contimg{
+  width: 326rpx;
+  height: 257rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60rpx;
+}
+.bottext{
+  font-size: 24rpx;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+  color:#000000;
+  text-align: center;
+  margin-top: 85rpx;
+}
+.days{
+  font-size:36rpx;
+  display: block;
+  color:#000000;
+  position: absolute;
+  font-family:PingFangSC-Regular;
+  bottom:71rpx;
+  right: 32rpx;
+
+}
+.workday{
+  font-size:36rpx;
+  margin: 65rpx auto 60rpx auto;
+  text-align: center;
+  color:#000000!important;  
+}
+.worktext{
+  width: 90%;
+  line-height: 48rpx;
+  font-size: 28rpx;
+  color:#FF6105;
+  padding:30rpx 0;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #E5E5E5;  
+}
+.worktext image{
+  width: 34rpx;
+  height: 32rpx;
+  margin: 0rpx 40rpx 0 70rpx;
+  vertical-align: middle;
+}
+
+.daysen{
+  width: 95%;
+  position: absolute;
+  bottom:0;
+  text-align: right;
+  padding-bottom: 10rpx;
+}
+.months{
+  font-size: 36rpx;
+  color: #000000;
+}
+.dayrs{
+  font-size: 34rpx;
+  color:#808080;
+
+}
+.opensenA{
+  float: right;
+  color:#FF6105;
+}
+.opensenB{
+  float: right;
+  color:#888888;
+}
+.stagen{
+  font-size: 28rpx;
+  padding-right:43rpx!important;
+  border-right: 0.5rpx solid white;
+  color:white;
+
+}
+.userbranch{
+  width: 100%;
+  text-align: center;
+}
+.Total{
+ margin-left: 43rpx;
+  font-size: 28rpx;
+  color:white;
+}
+.Total text{
+  font-size:48rpx;
+  color:white;
+   
+}
+.order{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.orderback{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+}
+.Militrays{
+  width: 100%;
+  overflow: hidden;
+}
+.MilitraysHead{
+  margin-top:61rpx; 
+  width:100%;
+
+}
+.MilitraysHead image{
+  width: 74rpx;
+  height: 112rpx;
+  display: block;
+  margin: 0 auto;
+
+}
+.MilitraysHead text{
+  display: block;
+  font-size: 32rpx;
+  color:#000000;
+  text-align: center;
+}
+.MilitraysHead text:last-child{
+  font-size:14rpx;
+  color:#000000;
+}
+.Militrayscontent{
+  width: 431rpx;
+  margin: 0 auto;
+}
+.Militrayscontent view{
+  margin: 20rpx 0 41rpx 0;
+  font-size: 48rpx;
+  color:#FF4134;
+  text-align: center;
+}
+.Militrayscontent text{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  color: #000000;
+}
+.first{
+  margin-left: 48rpx;
+}
+.nickNames{
+  text-decoration: underline;
+  font-size: 24rpx;
+  color:#000000;
+  margin: 0 10rpx;
+
+}
+.Militraysend{
+  width: 431rpx;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 87rpx;
+  margin-left: -215rpx;
+  
+}
+.MilitL{
+  width: 130rpx;
+  float: left;
+}
+.MilitL text{
+  font-size:24rpx;
+  display: block;
+  color: #000000;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
+}
+.MilitL image{
+  width: 119rpx;
+  height: 42rpx;
+  display: block;
+  
+}
+.Militr{
+  float:right;
+  width: 240rpx;
+}
+.Militr text{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  display: block;
+  color:#000000;
+}
+.Militr view{
+  font-size: 24rpx;
+  line-height: 48rpx;
+  display: block;
+  color:#000000;
+}
+.stage{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+.stage image{
+  width:529rpx;
+  height:780rpx;
+  display: block;
+  margin: 80rpx auto;
+}
+.stageTitle{
+  width: 100%;
+  font-size: 38rpx;
+  text-align: center;
+  display: block;
+  color:#000000;
+  margin: 146rpx auto 58rpx auto;
+}
+.stageback{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stageContent{
+  width:440rpx;
+  font-size: 24rpx;
+  color:#000000;
+  margin:0 auto;
+  display: block;
+  line-height: 40rpx;
+
+}
+.start{
+  margin-left:1rem
+}
+.unline{
+  
+  text-decoration: underline;
+  
+}
+.stageaysend{
+  width: 600rpx;
+  display: block;
+  color:#000000;
+  
+}
+.stageay{
+  margin-top: 300rpx;
+  margin-left: 286rpx;
+  font-size: 24rpx;
+
+}
+.stageay view{
+  margin-bottom: 30rpx;
+}

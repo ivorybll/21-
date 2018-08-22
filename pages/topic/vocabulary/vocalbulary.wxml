@@ -1,0 +1,28 @@
+<!-- <import src="../../wxParse/wxParse.wxml"/> -->
+<view class='Hint' hidden='{{Hint}}'>
+  <text>答题尚未完成\n请继续做题</text>
+</view>
+<view class="vocalbulary">
+  <image src='../../imgs/Operation.png' class='oper'></image>
+  <view class='Mean'>
+  <view class='Meaningtitle'>
+  词意辨识
+  </view>
+  <!-- 父子同参 -->
+  <view wx:for="{{datas[0].items}}" wx:item="item" wx:index="index" class='{{subject[index]}}'>
+    <text class='totitle'>{{index+1}}.{{item.question.question}}</text>
+    <view class='{{choice[index][ind]}}' wx:for="{{item.options}}" wx:for-item="items" wx:for-index="ind"  data-index='{{index}}' data-ind='{{ind}}' bindtap='choicequestion'>
+      <text >{{brr[ind]}}.</text>
+      <text data-index='{{index}}' data-ind='{{ind}}'>{{items.option}}</text>
+    </view>    
+  </view>  
+ </view>
+</view>
+ <view class='Meaningbottom' hidden='{{Punch}}'>
+  <text>完成全部练习，显示答案</text>
+  <button bindtap='sub'>提交</button>
+ </view>
+  <view class='Meaningbottom' hidden='{{!Punch}}'>
+  <text>分享至微信群"魔鬼训练营"</text>
+  <button open-type='share'>打卡分享</button>
+ </view>
